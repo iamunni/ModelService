@@ -24,7 +24,7 @@ class ModelView(Resource):
     def post(self):
 
         if not request.headers.get('VERIFICATION') == VERIFICATION_CODE:
-            abort(400, message="Unauthorized")
+            abort(401, message="Unauthorized")
 
         args = parser.parse_args()
         print(args)
