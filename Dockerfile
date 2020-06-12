@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM alpine:3.7
 RUN apt-get update -y &&\
 	apt -y install python3.7 &&\
 	apt update
