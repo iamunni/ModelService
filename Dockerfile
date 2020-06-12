@@ -3,7 +3,7 @@ RUN apt-get update -y &&\
 	apt -y install python3.7 &&\
 	apt update
 RUN apt -y install python3-pip &&\
-	-H pip3 install --upgrade pip &&\
+	pip3 install --upgrade pip &&\
 	apt update
 COPY . /app
 WORKDIR /app
