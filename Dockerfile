@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 RUN python3 -m spacy download en_core_web_sm &&\
 	python3 -m spacy download en_core_web_md
 EXPOSE 5000
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python3" ]
 CMD [ "run.py" ]
