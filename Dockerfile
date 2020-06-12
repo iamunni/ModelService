@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 RUN apt-get update -y &&\
 	apt -y install python3.7 &&\
 	apt update
-RUN  sudo apt -y install python3-pip &&\
+RUN apt -y install python3-pip &&\
 	-H pip3 install --upgrade pip &&\
 	apt update
 COPY . /app
