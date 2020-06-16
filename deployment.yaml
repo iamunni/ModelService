@@ -28,13 +28,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-name: model-service-service
-labels:
-  app: web
+  name: model-service-service
 spec:
-ports:
-  - port: 5000
-    targetPort: 5000
-selector:
-  app: web
-type: LoadBalancer
+  selector:
+    app: web
+  ports:
+    - port: 5000
+      targetPort: 5000
+  type: LoadBalancer
