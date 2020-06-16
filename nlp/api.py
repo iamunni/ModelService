@@ -67,5 +67,5 @@ class ModelView(Resource):
     
     
 class GetView(Resource):
-    def post(self):
+    def get(self):
         return "hello"
