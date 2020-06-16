@@ -64,3 +64,8 @@ class ModelView(Resource):
         print("++++++++++++++++++++++++++++++++++")
 
         return entities
+    
+    
+class GetView(Resource):
+    def post(self):
+        return "hello"
