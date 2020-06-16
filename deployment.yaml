@@ -22,3 +22,5 @@ spec:
         ports:
         - containerPort: 5000
           name: model-service
+      imagePullSecrets:
+      - name: myregistrykey
