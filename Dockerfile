@@ -4,6 +4,7 @@ RUN apt-get update -y &&\
 	apt update
 RUN apt -y install python3-pip &&\
 	pip3 install --upgrade pip &&\
+	apt -y install nginx &&\
 	apt update
 COPY . /app
 WORKDIR /app
