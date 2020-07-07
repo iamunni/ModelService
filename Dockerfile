@@ -4,9 +4,7 @@ RUN apt-get update -y &&\
 	apt update
 RUN apt -y install python3-pip &&\
 	pip3 install --upgrade pip &&\
-	apt -y install nginx &&\
 	apt update
-RUN ufw allow 'Nginx FULL'
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
